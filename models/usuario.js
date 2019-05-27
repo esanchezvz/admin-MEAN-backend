@@ -30,6 +30,10 @@ const usuarioSchema = new Schema({
     required: [true, 'El rol de usuario es requerido'],
     default: 'USER_ROLE',
     enum: rolesUsuario
+  },
+  google: {
+    type: Boolean,
+    default: false
   }
 });
 
